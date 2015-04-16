@@ -34,7 +34,7 @@ public class SampleController {
 	@ResponseBody
 	@Transactional(readOnly = true)
 	public String helloWorld() {
-		return this.cityService.getCity("Bath", "UK").getName();
+		return this.cityService.getCity("London", "UK").getName();
 	}
 
 }

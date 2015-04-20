@@ -1,10 +1,7 @@
-# README #
-
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-Simple 
+* Simple Spring Web App, using Spring-Boot. Integrated with In-Memory DB.
+* Jenkins CI and CD tested using this project using Docker.
 
 ### How do I get set up? ###
 

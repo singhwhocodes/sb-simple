@@ -21,7 +21,7 @@ public class CityRepositoryIntegrationTest {
 	@Test
 	public void findCityInCountry() {
 		String city = "London";
-		String country = "UK1";
+		String country = "UK";
 		
 		City result = this.repository.findByNameAndCountryAllIgnoringCase(city, country);
 		assertNotNull("Unable to find city [" + city + "] in country [" + country + "]", result);

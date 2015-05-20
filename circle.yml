@@ -1,0 +1,13 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t jpsingh/sb-simple .
+
+test:
+  override:
+    - docker run -d -p 9000:9000 jpsingh/sb-simple; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:9000

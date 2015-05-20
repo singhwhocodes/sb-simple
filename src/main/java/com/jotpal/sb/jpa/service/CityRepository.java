@@ -22,7 +22,7 @@ import org.springframework.data.repository.Repository;
 
 import com.jotpal.sb.jpa.domain.City;
 
-interface CityRepository extends Repository<City, Long> {
+public interface CityRepository extends Repository<City, Long> {
 
 	Page<City> findAll(Pageable pageable);
 

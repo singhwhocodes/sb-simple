@@ -11,6 +11,7 @@ dependencies:
 ##Creates the container from the image - Works. But curl fails :(
 test:
   override:
-    - docker run -p 9090:9090 --name sb-simple -t -i singhwhocodes/sb-simple; sleep 10
+    - docker run -d -p 9090:9090 --name sb-simple singhwhocodes/sb-simple; sleep 10
+    - docker ps
     - curl --retry 10 --retry-delay 5 -v http://localhost:9090
 ##- mvn integration-test
